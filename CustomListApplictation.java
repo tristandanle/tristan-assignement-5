@@ -6,16 +6,15 @@ import java.util.List;
 public class CustomListApplictation {
 
 	public static void main(String[] args) {
-		// CustomList<Integer> customs = new CustomArrayList<Integer>();
-
 		CustomList<String> myCustomList = new CustomArrayList<>();
 
 		for (int j = 0; j < 20; j++) {
-			myCustomList.add("element " + j); // and continue to add another 10, 20 or 40 more elements
+			myCustomList.add("element " + j);
 		}
-		
-		// then you should validate that all the elements you've inserted actually exist
-		// in your data structure
+
+		myCustomList.add("element 1000");
+		myCustomList.add("element 2000");
+
 		for (int i = 0; i < myCustomList.getSize(); i++) {
 			System.out.println(myCustomList.get(i));
 		}
